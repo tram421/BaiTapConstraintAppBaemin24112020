@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#4DD4CD">
+
+    <Button
+        android:id="@+id/buttonClose"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/liberationmonoregular"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="#4DD4CD"
+        android:text="x"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineApp1"
+        app:layout_constraintGuide_percent="0.08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <ImageView
+        android:id="@+id/baeminLogo"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineApp1"
+        android:src="@drawable/baeminlogo"
+        android:layout_width="250dp"
+        android:layout_height="0dp"/>
+    <TextView
+        android:id="@+id/brandName"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#fff"
+        android:fontFamily="@font/liberationmonoregular"
+        app:layout_constraintTop_toBottomOf="@+id/baeminLogo"
+        android:textSize="70sp"
+        android:text="BAEMIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/slogan"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:text="NÓNG GIÒN ĐÂY!"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandName"
+        android:fontFamily="@font/liberationmonoregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonPhoneContact"
+        android:textSize="16sp"
+        android:background="#FFFFFF"
+        android:textColor="#4DD4CD"
+        android:paddingVertical="20dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonfacebookContact"
+        android:text="Kết nối với số điện thoại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineApp2"
+        app:layout_constraintGuide_percent="0.95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+    <Button
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineApp2"
+        android:id="@+id/buttonfacebookContact"
+        android:textSize="16sp"
+        android:background="#4167B2"
+        android:textColor="#fff"
+        android:paddingVertical="20dp"
+        android:layout_margin="10dp"
+        android:text="Kết nối với Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
